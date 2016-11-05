@@ -10,6 +10,9 @@ CLI interface for fauna library
     fauna-cli </path/to/input/file> </path/to/output/file>
 
 
+### TODOs
+- [ ] Add unit tests
+
 ### Links
 * [Writing Command-Line Applications in NodeJS](https://medium.freecodecamp.com/writing-command-line-applications-in-nodejs-2cf8327eee2#.bs6izbxgt)
 * [Building command line tools with Node.js - Atlassian Developers](https://developer.atlassian.com/blog/2015/11/scripting-with-node/)
