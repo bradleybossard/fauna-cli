@@ -2,11 +2,18 @@
 
 'use strict';
 
+const fs = require('fs');
 const program = require('commander');
 const fauna = require('fauna');
 
 function runFauna(input, output) {
-  console.log(input, output);
+  const config = JSON.parse(fs.readFileSync(input, 'utf8'));
+  const svg = fauna.runConfig(config);
+  fs.writeFile(output, svg, function(err) {
+    if(err) {
+      throw err;
+    }
+  }); 
 };
 
 program
