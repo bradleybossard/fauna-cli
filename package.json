@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/bradleybossard/fauna-cli/issues"
   },
-  "homepage": "https://github.com/bradleybossard/fauna-cli#readme"
+  "homepage": "https://github.com/bradleybossard/fauna-cli#readme",
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
 }
