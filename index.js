@@ -4,6 +4,7 @@
 
 const program = require('commander');
 const chalk = require('chalk');
+const fauna = require('fauna');
 
 function runFauna(input, output) {
   console.log(input, output);
