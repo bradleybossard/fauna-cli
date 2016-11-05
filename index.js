@@ -1,7 +1,10 @@
 #!/usr/bin/env node
 
 'use strict';
+
 const program = require('commander');
+const chalk = require('chalk');
+
 program
   .version('1.0.0')
   .usage('--input <input> --output <output>')
@@ -13,13 +16,13 @@ program
 
 if (!program.input) {
   console.log('');
-  console.log('  --input parameter required');
+  console.log(chalk.red.bold('  --input parameter required'));
   program.help();
 }
 
 if (!program.output) {
   console.log('');
-  console.log('  --output parameter required');
+  console.log(chalk.red.bold('  --output parameter required'));
   program.help();
 }
 
