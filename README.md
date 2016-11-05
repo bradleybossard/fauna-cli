@@ -19,4 +19,4 @@ CLI interface for fauna library
 * [Building command line tools with Node.js - Atlassian Developers](https://developer.atlassian.com/blog/2015/11/scripting-with-node/)
 * [commander-starter/index.js at master · tsantef/commander-starter](https://github.com/tsantef/commander-starter/blob/master/index.js)
 * [Command-line utilities with Node.js](http://cruft.io/posts/node-command-line-utilities/)
-
+* [Unit testing CLI programs | Better world by better software](https://glebbahmutov.com/blog/unit-testing-cli-programs/)
