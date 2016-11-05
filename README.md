@@ -11,6 +11,7 @@ CLI interface for fauna library
 
 
 ### TODOs
+- [ ] Add example inputs and outputs
 - [ ] Add unit tests
 
 ### Links
