@@ -1,0 +1,21 @@
+{
+  "name": "fauna-cli",
+  "version": "1.0.0",
+  "description": "CLI interface for fauna library",
+  "bin": {
+    "fauna-cli": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradleybossard/fauna-cli.git"
+  },
+  "author": "Bradley Bossard <bradleybossard@gmail.com> (http://bradleybossard.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bradleybossard/fauna-cli/issues"
+  },
+  "homepage": "https://github.com/bradleybossard/fauna-cli#readme"
+}
