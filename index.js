@@ -5,24 +5,21 @@
 const program = require('commander');
 const chalk = require('chalk');
 
+function runFauna(input, output) {
+  console.log(input, output);
+};
+
 program
   .version('1.0.0')
-  .usage('--input <input> --output <output>')
+  .arguments('<input> <output>')
+  .usage('<input> <output>\n\n  where <input>=/path/to/input/config\n        <output>=/path/to/output/svg')
   .description('CLI tool for fauna library for generating animated L-Systems')
-  .option('-i, --input <input-config>','path in input config json')
-  .option('-o, --output <output-svg>', 'path to output svg file')
-  //.action('');
-  .parse(process.argv);
+  //.option('-i, --input <input-config>','path in input config json')
+  //.option('-o, --output <output-svg>', 'path to output svg file')
+  .action(runFauna);
 
-if (!program.input) {
-  console.log('');
-  console.log(chalk.red.bold('  --input parameter required'));
-  program.help();
+program.parse(process.argv);
+
+if(!program.args.length) {
+    program.help();
 }
-
-if (!program.output) {
-  console.log('');
-  console.log(chalk.red.bold('  --output parameter required'));
-  program.help();
-}
-
